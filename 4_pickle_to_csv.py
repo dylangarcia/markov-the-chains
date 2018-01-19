@@ -7,7 +7,7 @@ common_flairs = ['Georgia Bulldogs', 'Alabama Crimson Tide', 'Ohio State Buckeye
 with open("flair_data_all_flairs.csv", "w") as fd:
     fd.write("Time,Flair,Comment\n")
     for _ in range(1, 6):
-        with open("thread_{}_full_comments.p".format(_), "rb") as f:
+        with open("./comments/thread_{}_full_comments.p".format(_), "rb") as f:
             comments = pickle.load(f)
 
         # Sort comments by time, oldest to newest

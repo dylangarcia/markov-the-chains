@@ -14,7 +14,7 @@ class POSifiedText(markovify.NewlineText):
             sentence = sentence.replace(" {}".format(char), char)
         return sentence
 
-with open("comments.txt", encoding="cp1252") as f:
+with open("./comments/comments.txt", encoding="cp1252") as f:
     text = f.read()
 
 text_model = POSifiedText(text)

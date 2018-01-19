@@ -28,7 +28,7 @@ for i, thread_id in enumerate(thread_ids, start=1):
 
     # Write all of the thread's comments to a
     # pickle so you don't have to network request them later
-    with open("thread_{}_full_comments.p".format(i), "wb") as f:
+    with open("./comments/thread_{}_full_comments.p".format(i), "wb") as f:
         pickle.dump(comments, f)
 
 

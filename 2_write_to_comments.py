@@ -1,7 +1,7 @@
 import pickle
 from datetime import datetime
 
-with open("comments.txt", "a") as fd:
+with open("./comments/comments.txt", "a") as fd:
     # Iterate 1 - 5 for our thread comments
     for _ in range(1, 6):
         # Read in each of the pickle files

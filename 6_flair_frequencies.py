@@ -4,7 +4,7 @@ from datetime import datetime
 
 flairs = Counter()
 for _ in range(1, 6):
-    with open("thread_{}_full_comments.p".format(_), "rb") as f:
+    with open("./comments/thread_{}_full_comments.p".format(_), "rb") as f:
         comments = pickle.load(f)
 
     comments = sorted(comments, key=lambda x: x["created"])
